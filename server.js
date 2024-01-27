@@ -124,6 +124,10 @@ app.delete("/student/delete", async(req,res)=>{
   }
 })
 
+app.use("/", (req, res) => {
+  res.send("<h1>Test1</h1>");
+});
+
 const PORT = 5000;
 
 app.listen(PORT, () => {
